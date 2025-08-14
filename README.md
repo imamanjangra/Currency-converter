@@ -7,22 +7,21 @@ A simple web app to convert between currencies using real-time exchange rates. B
 
 ✨ Features
 
-⚡ Real-time exchange rates
+• ⚡ Real-time exchange rates
 
-🎨 Clean, responsive UI
+• 🎨 Clean, responsive UI
 
-🌍 Currency selection with flags
+• 🌍 Currency selection with flags
 
-🚀 Fast & lightweight (no libraries)
-
+• 🚀 Fast & lightweight (no libraries)
 
 📂 Files
 
-📄 index.html → App structure
+• 📄 index.html → App structure
 
-🎨 style.css → Styling
+• 🎨 style.css → Styling
 
-⚙️ app.js → Logic & API calls
+• ⚙️ app.js → Logic & API calls
 
 
 
@@ -48,12 +47,12 @@ Replace {currency} with usd, inr, eur, etc.
 
 🛠️ Technologies Used
 
-HTML5
+• HTML5
 
-CSS3
+• CSS3
 
-Tailwind CSS
+• Tailwind CSS
 
-JavaScript (ES6)
+• JavaScript (ES6)
 
-Fetch API
+• Fetch API
