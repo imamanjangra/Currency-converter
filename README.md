@@ -6,32 +6,31 @@ A simple web app to convert between currencies using real-time exchange rates. B
 
 ✨ Features
 
-Real-time exchange rates
+⚡ Real-time exchange rates
 
-Clean, responsive UI
+🎨 Clean, responsive UI
 
-Currency selection with flags
+🌍 Currency selection with flags
 
-Fast & lightweight (no libraries)
+🚀 Fast & lightweight (no libraries)
 
 📂 Files
 
-index.html → App structure
+📄 index.html → App structure
 
-style.css → Styling
+🎨 style.css → Styling
 
-app.js → Logic & API calls
+⚙️ app.js → Logic & API calls
 
 🚀 How to Use
 
-Clone repo:
+1️⃣ Clone repo:
 
 git clone https://github.com/imamanjangra/Currency-converter.git
 
 
-Open index.html in a browser.
-
-Enter amount → Select currencies → Get result.
+2️⃣ Open index.html in a browser.
+3️⃣ Enter amount → Select currencies → Get result.
 
 🌐 API
 https://2024-03-06.currency-api.pages.dev/v1/currencies/{currency}.json
