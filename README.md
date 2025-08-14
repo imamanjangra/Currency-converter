@@ -2,7 +2,7 @@
 
 A simple web app to convert between currencies using real-time exchange rates. Built with HTML, CSS, Tailwind CSS, and JavaScript, it uses the Fetch API to get live rates and displays currency flags for a better experience.
 
-🌎 Live Demo: Click Here
+🌎 Live Demo: https://imamanjangra.github.io/Currency-converter/
 
 ✨ Features
 
