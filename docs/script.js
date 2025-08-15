@@ -6,7 +6,8 @@ let img1 = document.querySelector(".img1")
 let img2 = document.querySelector(".img2")
 let i1 = document.querySelector(".i1");
 let option = document.querySelectorAll(".option");
-let Answer = document.querySelector("#Answer")
+let Answer = document.querySelector("#Answer");
+let swich = document.querySelector(".swich");
 
 
 otn1.addEventListener('change' , ()=>{ 
@@ -16,6 +17,21 @@ otn2.addEventListener('change' , ()=>{
     img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
 })
 
+swich.addEventListener('click' , ()=>{
+    console.log("swich is clicked");
+    swich.style.transition = 'transform 150ms ease';
+    swich.style.transform = 'scale(0.9)';
+    setTimeout(() => {
+        swich.style.transform = 'scale(1)';
+    }, 150);
+    let v1 = otn1.value
+    let v2 = otn2.value
+    console.log(`${v2} to ${v1}`)
+    otn1.value = v2;
+    otn2.value = v1;
+    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
+})
 
 submit_btn.addEventListener('click' , (e)=>{
     e.preventDefault();
