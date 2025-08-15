@@ -302,6 +302,9 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .bg-\[\#\#81B622\] {
     background-color: ##81B622;
   }

@@ -13,18 +13,23 @@ let body  = document.querySelector("body")
 let main_box = document.querySelector(".main_box");
 
 let dark_value = true;
-dark_btn.addEventListener('click' , ()=>{
-    if(dark_value){
-        body.style.backgroundColor = "black"
-        body.style.color = "white"
-        main_box.style.backgroundColor = 'black'
-        dark_value = false
-    }if(dark_value == "false"){
-         body.style.backgroundColor = "black"
-        body.style.color = "white"
-        main_box.style.backgroundColor = 'black'
+
+dark_btn.addEventListener('click', () => {
+    if (dark_value) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        main_box.style.backgroundColor = "black";
+        dark_value = false;
+         main_box.style.boxShadow = "0 0 25px rgba(255, 255, 255, 0.4)";
+        
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        main_box.style.backgroundColor = "white";
+          main_box.style.boxShadow = "0 6px 12px rgba(0, 0, 0, 0.15)";
+        dark_value = true;
     }
-})
+});
 
 //swich btn
 swich.addEventListener('click' , ()=>{
