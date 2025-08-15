@@ -8,15 +8,25 @@ let i1 = document.querySelector(".i1");
 let option = document.querySelectorAll(".option");
 let Answer = document.querySelector("#Answer");
 let swich = document.querySelector(".swich");
+let dark_btn = document.querySelector(".dark_btn");
+let body  = document.querySelector("body")
+let main_box = document.querySelector(".main_box");
 
-
-otn1.addEventListener('change' , ()=>{ 
-    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+let dark_value = true;
+dark_btn.addEventListener('click' , ()=>{
+    if(dark_value){
+        body.style.backgroundColor = "black"
+        body.style.color = "white"
+        main_box.style.backgroundColor = 'black'
+        dark_value = false
+    }if(dark_value == "false"){
+         body.style.backgroundColor = "black"
+        body.style.color = "white"
+        main_box.style.backgroundColor = 'black'
+    }
 })
-otn2.addEventListener('change' , ()=>{ 
-    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
-})
 
+//swich btn
 swich.addEventListener('click' , ()=>{
     console.log("swich is clicked");
     swich.style.transition = 'transform 150ms ease';
@@ -29,10 +39,18 @@ swich.addEventListener('click' , ()=>{
     console.log(`${v2} to ${v1}`)
     otn1.value = v2;
     otn2.value = v1;
+    
+})
+
+// Img change 
+otn1.addEventListener('change' , ()=>{ 
     img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+})
+otn2.addEventListener('change' , ()=>{ 
     img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
 })
 
+//submit btn work and api use 
 submit_btn.addEventListener('click' , (e)=>{
     e.preventDefault();
     let input_value = amount_input.value;
@@ -40,7 +58,7 @@ submit_btn.addEventListener('click' , (e)=>{
     if (input_value <= 0 || isNaN(input_value)) {
         alert("Enter a valid value")
     }else{
-       let id1 = otn1.querySelector(`option[value="${otn1.value}"]`).id;
+        let id1 = otn1.querySelector(`option[value="${otn1.value}"]`).id;
         let id2 = otn2.querySelector(`option[value="${otn2.value}"]`).id;
 
         let api_url = `https://api.currencylayer.com/convert?access_key=acb94aa5ea702b79ad71bee15e7844ec&from=${id1}&to=${id2}&amount=${input_value}`;
@@ -53,13 +71,12 @@ submit_btn.addEventListener('click' , (e)=>{
 
             if (data.result) {
                 console.log(`Converted Amount: ${data.result} ${id2}`);
-                Answer.innerHTML = `${input_value} ${id1} = ${data.result} ${id2}`
+                Answer.innerHTML = `${input_value} ${id1} = ${data.result.toFixed(2)} ${id2}`
             } else {
                 console.log("Error in conversion");
             }
         }
         getdata();
-
     }
 })
 
