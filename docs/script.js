@@ -1,4 +1,4 @@
-let amount_input = document.querySelector(".amount_input");// input value frome Entre amount 
+let amount_input = document.querySelector(".amount_input");
 let submit_btn = document.querySelector(".submit_btn");
 let otn1 = document.querySelector(".otn1");
 let otn2 = document.querySelector(".otn2");
