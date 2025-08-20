@@ -44,7 +44,8 @@ swich.addEventListener('click' , ()=>{
     console.log(`${v2} to ${v1}`)
     otn1.value = v2;
     otn2.value = v1;
-    
+    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
 })
 
 // Img change 
