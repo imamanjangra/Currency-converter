@@ -31,6 +31,14 @@ dark_btn.addEventListener('click', () => {
     }
 });
 
+// Img change 
+otn1.addEventListener('change' , ()=>{ 
+    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+})
+otn2.addEventListener('change' , ()=>{ 
+    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
+})
+
 //swich btn
 swich.addEventListener('click' , ()=>{
     console.log("swich is clicked");
@@ -44,17 +52,11 @@ swich.addEventListener('click' , ()=>{
     console.log(`${v2} to ${v1}`)
     otn1.value = v2;
     otn2.value = v1;
-    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
-    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
+     img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
+     img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
 })
 
-// Img change 
-otn1.addEventListener('change' , ()=>{ 
-    img1.src = `https://flagsapi.com/${otn1.value}/flat/64.png`;
-})
-otn2.addEventListener('change' , ()=>{ 
-    img2.src = `https://flagsapi.com/${otn2.value}/flat/64.png`;
-})
+
 
 //submit btn work and api use 
 submit_btn.addEventListener('click' , (e)=>{
